@@ -9,6 +9,27 @@ A high-performance SaaS platform built with **Next.js 15** designed to automate 
 ## System Architecture & Design
 Before writing a single line of code, I mapped out the system to ensure a scalable data flow.
 - **High-Level Design:** Used **sequence diagrams** to define how API routes, background workers, and third-party services (OpenAI) interact.
+
+### System Architecture & Flows
+
+#### 1. High-Level Architecture (HLA)
+<p align="center">
+  <img src="docs/architecture/HLA-Aipply.JPG" width="600" alt="High Level Architecture">
+</p>
+
+---
+
+### 🔄 API & Worker Sequence Diagrams
+
+#### A. User Profiling Flow
+<img src="docs/architecture/API-calls-Sequence-Diagram-Profiling.jpg" width="500" alt="Profiling Flow">
+
+#### B. Job Matching Logic
+<img src="docs/architecture/API-calls-Sequence-Diagram-JobMatch.jpg" width="500" alt="Job Match Flow">
+
+#### C. Search, Compose, and Send Email Workflow
+<img src="docs/architecture/API-calls-Sequence-Diagram-Search-Create-Send-Email.jpg" width="500" alt="Email Flow">
+
 - **Database Strategy:** Designed custom MongoDB schemas from scratch, prioritizing data and efficient relationships for a  SaaS application.
 
 ## Key Technical Implementations
